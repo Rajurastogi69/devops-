@@ -1,0 +1,64 @@
+Go to First account and select the repository you want to fork and click on the fork option.
+
+Click on the fork option.
+
+Now you will be able to see that forked repository in your second account.
+
+Clone that forked repository in any folder, say “DemoFork”
+
+$git init
+
+$ cd C:\\Users\\OneDrive\\Desktop\\gitfork
+
+$git clone https://github.com/ABC/devopsfork.git
+
+$ls 
+
+$git branch -m main
+
+$vim test.txt
+
+$cat test.txt
+
+$git status
+
+$git remote
+
+$git remote rm origin
+
+$git add .
+
+$git commit -m "code added"
+
+$git remote add origin 
+
+Go to your profile and create token to set url
+Profile->Settings->Developer Settings->Personal access tokens->Tokens(Classic)->Generate new token(classic)
+->It will ask you for authentication-> Perform Authentication->You can set expiration date of your token->you can also select "custom"
+select workflow,write:packages,delete:packages,admin:org,admin:public_key,admin:repo_hook,admin:gpg_key,admin:ssh_signing_key
+
+->Generate Token->copy it 
+
+$ git remote add origin https://github.com/ABC/devopsfork.git
+
+$ git remote set-url origin https://"yourtokenhere"github.com/ABC/devopsfork.git
+
+$git push origin main
+
+Refresh your Git hub and check the content of your file.
+
+Create Pull request from second account.
+
+Click on new Pull request.
+
+Select proper branches and repository
+
+Create Pull request
+
+Give title and click on “Create pull request”
+
+Your Pull request has been generated.
+
+Check your first accout and repository for Pull request
+
+Click on Merge request.
