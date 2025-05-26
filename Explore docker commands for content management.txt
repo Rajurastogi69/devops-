@@ -1,0 +1,16 @@
+ 1. Check Docker version: docker --version
+ 2. Pull a Docker image from DockerHub: docker pull nginx
+ 3. List all Docker images: docker images
+ 4. Run a container from an image:docker run -d -p 8080:80 --name mynginx  nginx
+ This will run the Nginx container and mapport80(inside the container)to port8080 (on your host).
+ 5. List all running containers: docker ps
+ 6. Copy content from host to container: docker cp index.html mynginx:/usr/share/nginx/html/
+ Replace index.html with your actual file. This copies a file into the running container.
+ 7. Copy content from container to host: docker cp mynginx:/usr/share/nginx/html/index.html .
+ 8. Create and use Docker volume for persistent content: 
+ docker volume create mydata
+ docker run -d -p 8081:80 --name nginx_vol -v mydata:/usr/share/nginx/html nginx
+ Now any data added to the /usr/share/nginx/html inside the container will persist even if the container is removed.
+ 9. List Docker volumes: docker volume ls
+ 10. Remove a container: docker rm -f mynginx
+ 11. Remove an image: docker rmi nginx
