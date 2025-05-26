@@ -1,0 +1,25 @@
+first account-
+settings -> collaboraters -> Add people -> add name ->add
+
+now go to second account to accept the invite:
+your organization -> join -> accept invitation
+
+copy the url of the first account to clone.
+Now create a folder and open gitbash here
+$ git init
+
+$ git clone https://github.com/Devops/devops1.txt
+
+$ cd Devops
+
+$ vim devops1.txt
+
+$ git status
+
+$ cat devops1.txt
+
+$ git add .
+
+$ git commit -m "code added"
+
+$ git push origin main
