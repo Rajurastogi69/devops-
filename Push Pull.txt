@@ -1,0 +1,29 @@
+Push Pull:
+1. Create Repository
+2. Create Folder on Desktop having 3 text files
+
+$ cd D:
+
+$ cd Devops
+
+$ git init
+Initialized empty Git repository in D:/Devops/.git/
+
+$ ls
+
+$ git status
+
+$ git add .
+
+$ git status
+
+$ git commit -m "code added"
+
+$ git branch -m main
+
+$ git remote add origin https://github.com/ABC/devops.git
+
+$ git push origin main
+
+$ git pull origin main
+
